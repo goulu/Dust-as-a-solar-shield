@@ -181,7 +181,7 @@ pl.legend(loc='upper right')
 pl.figtext(0.18,0.8,r'cloud mass: '+Mduststr)
 
 
-myscript = __file__
+myscript = os.path.basename(__file__)
 fignm = myscript.split('_')[1]
 print(fignm)
 pl.savefig(fignm+".pdf")

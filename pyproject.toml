@@ -1,0 +1,22 @@
+[project]
+name = "dust-as-a-solar-shield"
+version = "0.1.0"
+description = "Code and figures associated with 'Dust as a solar shield' (Bromley, Khan, and Kenyon)"
+authors = [
+    { name = "Ben Bromley" },
+    { name = "Sameer H. Khan" },
+    { name = "Scott J. Kenyon" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "miepython<3.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

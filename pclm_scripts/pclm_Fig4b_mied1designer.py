@@ -139,7 +139,7 @@ pl.ylabel(r'L$_1$-Earth distance (au)')
 pl.legend(loc='upper right')
 
 
-myscript = __file__
+myscript = os.path.basename(__file__)
 fignm = myscript.split('_')[1]
 print(fignm)
 pl.savefig(fignm+".pdf")

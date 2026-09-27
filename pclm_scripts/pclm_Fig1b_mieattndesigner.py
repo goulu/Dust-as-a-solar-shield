@@ -126,7 +126,7 @@ pl.legend(loc='upper right')
 ofil = 'mieattndesigner.pdf'
 pl.savefig(ofil)
 
-myscript = __file__
+myscript = os.path.basename(__file__)
 fignm = myscript.split('_')[1]
 print(fignm)
 pl.savefig(fignm+".pdf")

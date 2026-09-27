@@ -162,7 +162,7 @@ pl.savefig(ofil)
 import os
 os.system('convert '+ofil+' ~/www/tmp.jpg')
 
-myscript = __file__
+myscript = os.path.basename(__file__)
 fignm = myscript.split('_')[1]
 print(fignm)
 pl.savefig(fignm+".pdf")

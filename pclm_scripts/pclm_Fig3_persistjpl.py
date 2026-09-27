@@ -315,7 +315,7 @@ pl.ylabel(r'persistence (days)',size=14)
 pl.legend(loc=[0.72,0.6])
 
 
-myscript = __file__
+myscript = os.path.basename(__file__)
 fignm = myscript.split('_')[1]
 print(fignm)
 pl.savefig(fignm+".pdf")
